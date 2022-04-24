@@ -1,0 +1,160 @@
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+
+/* MOBILE FIRST */
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+/* 
+oranžová:           #F03000;
+nejsvětleji šedá:   #F0F0F0
+světlešedá:         #80808080;
+středně šedá:       #888888;
+tmavěšedá:          #444444;
+*/
+
+.header__list {
+    padding: 0;
+    flex: 1 1 100%;
+    display: flex;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.header__list-item {
+    list-style-type: none;
+    flex: 1 1 calc(100% / 3);
+    width: 50px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #F03000;
+    font-weight: bold;
+    border: 1px solid transparent;
+    padding: 20px;
+}
+
+.header__list-item:hover {
+    background-color: #F03000;
+    color: white;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+
+.header__image {
+    flex: 1 1 100%;
+    width: 230px;
+   margin: 30px auto;
+}
+
+.pohoda {
+    display: flex;
+    background-image: url(images/palmy.png);
+    background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	min-height: 240px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.pohoda__price {
+    background-color: #F03000;
+    max-width: fit-content;
+    border: 1px solid transparent;
+    margin: 0;
+    padding: 10px;
+    margin-left: 20px;
+    position: absolute;
+    top: 20px;
+}
+
+.pohoda__nadpis {
+    position: absolute;
+    top: 160px;
+    margin: 0;
+    font-size: 28px;
+    padding-left: 20px;
+}
+
+.pohoda__popisek {
+    position: absolute;
+    top: 200px;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.jezero {
+    background-image: url(images/jezero2.png);
+    background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	min-height: 150px;
+    color: white;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+}
+
+.jezero__price {
+    background-color: #F03000;
+    max-width: fit-content;
+    border: 1px solid transparent;
+    margin: 0;
+    padding: 10px;
+    margin-left: 20px;
+    position: absolute;
+    top: 20px;
+}
+
+.jezero__nadpis {
+    position: absolute;
+    top: 100px;
+    margin: 0;
+    font-size: 28px;
+    padding-left: 20px;
+}
+
+.kolo {
+    background-image: url(images/nakole.png);
+    background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	min-height: 150px;
+    color: white;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.kolo__price {
+    background-color: #F03000;
+    max-width: fit-content;
+    border: 1px solid transparent;
+    margin: 0;
+    padding: 10px;
+    margin-left: 20px;
+    position: absolute;
+    top: 20px;
+}
+
+.kolo__nadpis {
+    position: absolute;
+    top: 100px;
+    margin: 0;
+    font-size: 28px;
+    padding-left: 20px;
+}
+
+
+
