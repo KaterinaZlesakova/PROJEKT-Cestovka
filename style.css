@@ -40,7 +40,7 @@ tmavěšedá:          #444444;
 }
 
 .header__list-item:hover {
-    background-color: purple;
+    background-color: #F03000;
     color: white;
 }
 
@@ -56,20 +56,26 @@ tmavěšedá:          #444444;
    margin: 30px auto;
 }
 
-.pohoda {
+.div__hlavni { /* když mám div__hlavni, ale různé obrázky, musím vložit obrázky */
     display: flex;
-    background-image: url(images/palmy.png);
+    object-fit: cover;
     background-repeat: no-repeat;
-	background-size: cover;
 	display: block;
-	min-height: 240px;
+	max-height: 240px;
+    max-width: 440px;
     color: white;
     font-family: 'Montserrat', sans-serif;
     position: relative;
     margin-bottom: 20px;
+    margin: auto;
 }
 
-.pohoda__price {
+/* .div__img {
+    max-height: 240px;
+    max-width: 440px;
+} */
+
+.div__price {
     background-color: #F03000;
     max-width: fit-content;
     border: 1px solid transparent;
@@ -80,7 +86,7 @@ tmavěšedá:          #444444;
     top: 20px;
 }
 
-.pohoda__nadpis {
+.div__nadpis {
     position: absolute;
     top: 160px;
     margin: 0;
@@ -97,63 +103,46 @@ tmavěšedá:          #444444;
 
 .jezero {
     background-image: url(images/jezero2.png);
-    background-repeat: no-repeat;
-	background-size: cover;
 	display: block;
-	min-height: 150px;
     color: white;
     position: relative;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
-}
-
-.jezero__price {
-    background-color: #F03000;
-    max-width: fit-content;
-    border: 1px solid transparent;
-    margin: 0;
-    padding: 10px;
-    margin-left: 20px;
-    position: absolute;
-    top: 20px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    max-height: 240px;
+    max-width: 440px;
+    margin: auto;
 }
 
 .jezero__nadpis {
     position: absolute;
     top: 100px;
     margin: 0;
-    font-size: 28px;
+    font-size: 20px;
     padding-left: 20px;
 }
 
 .kolo {
     background-image: url(images/nakole.png);
+    object-fit: cover;
     background-repeat: no-repeat;
-	background-size: cover;
 	display: block;
 	min-height: 150px;
     color: white;
     position: relative;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 40px;
-}
-
-.kolo__price {
-    background-color: #F03000;
-    max-width: fit-content;
-    border: 1px solid transparent;
-    margin: 0;
-    padding: 10px;
-    margin-left: 20px;
-    position: absolute;
-    top: 20px;
+    max-height: 240px;
+    max-width: 440px;
+    margin: auto;
 }
 
 .kolo__nadpis {
     position: absolute;
     top: 100px;
     margin: 0;
-    font-size: 28px;
+    font-size: 20px;
     padding-left: 20px;
 }
 
@@ -175,18 +164,75 @@ tmavěšedá:          #444444;
 }
 
 .sluzby__image {
-    flex-basis: 100%;
-    max-width: fit-content;
+    flex-grow: 0;
+    flex-shrink: 1;
+    max-width: 100px;
     padding-left: 30px;
+    padding-right: 20px;
 }
 
 .sluzby__right {
     flex-basis: 100%;
     max-width: 325px;
-    padding-left: 30px;
+    flex-grow: 1;
 }
 
-.sluzby__text {
-    
+.shield {
+    margin-bottom: 40px;
+}
+
+.lastminute__header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.romantika {
+    display: flex;
+    background-image: url(images/lodicka.png);
+    background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	min-height: 240px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.canyon {
+    display: flex;
+    background-image: url(images/podkova.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    max-height: 240px;
+    max-width: 440px;
+	display: block;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.kanary {
+    display: flex;
+    background-image: url(images/zatoka.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    max-height: 240px;
+    max-width: 440px;
+	display: block;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.info {
+    background-color: #F0F0F0;
+    border: 1px solid #F0F0F0;
 }
 
