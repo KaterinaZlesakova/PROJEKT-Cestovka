@@ -59,7 +59,7 @@ body {
    margin: 30px auto;
 }
 
-.div__hlavni { /* když mám div__hlavni, ale různé obrázky, musím vložit obrázky */
+.div__hlavni {
     display: flex;
     object-fit: cover;
     background-repeat: no-repeat;
@@ -72,10 +72,16 @@ body {
     margin: auto;
 }
 
-/* .div__img {
-    max-height: 240px;
-    max-width: 440px;
-} */
+.div__img {
+    width: 100%;
+    height: 100%;
+}
+
+.div__img2 {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
 
 .div__price {
     background-color: #F03000;
@@ -90,15 +96,30 @@ body {
 
 .div__nadpis {
     position: absolute;
-    top: 160px;
+    top: 135px;
     margin: 0;
     font-size: 28px;
     padding-left: 20px;
 }
 
-.pohoda__popisek {
+.div__nadpis--higher {
     position: absolute;
-    top: 200px;
+    top: 85px;
+    margin: 0;
+    font-size: 28px;
+    padding-left: 20px;
+}
+
+.div__popisek {
+    position: absolute;
+    top: 190px;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.div__popisek--higher {
+    position: absolute;
+    top: 170px;
     margin: 0;
     padding-left: 20px;
 }
@@ -116,9 +137,9 @@ body {
     margin: auto;
 }
 
-.jezero__nadpis {
+.div__nadpis2 {
     position: absolute;
-    top: 100px;
+    top: 150px;
     margin: 0;
     font-size: 20px;
     padding-left: 20px;
@@ -136,14 +157,6 @@ body {
     max-height: 240px;
     max-width: 440px;
     margin: auto;
-}
-
-.kolo__nadpis {
-    position: absolute;
-    top: 100px;
-    margin: 0;
-    font-size: 20px;
-    padding-left: 20px;
 }
 
 .sluzby {
@@ -229,6 +242,7 @@ body {
 
 .info__header {
     font-size: 24px;
+    margin-left: 20px;
 }
 
 .info__part {
@@ -246,5 +260,20 @@ body {
 
 .info__date {
     color: #888888;
+}
+
+.div {
+    position: relative;
+}
+
+.footer {
+    background-color: #444444;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    min-height: 60px;
+    padding: 20px;
 }
 
